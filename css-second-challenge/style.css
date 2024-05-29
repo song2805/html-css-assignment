@@ -1,0 +1,45 @@
+.main {
+
+    /* 노트스타일의 뒷 배경 주기
+    참고: http://projects.verou.me/css3patterns/ */
+    background-color: #fff;
+    background-image:
+      linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+      linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+  
+    /* 전체 내용을 안으로 10% 정도 들여쓰기 */
+    padding-left: 10%;
+  }
+  
+  h1 {
+    color: #9b59b6
+  }
+  
+  /* 첫번째 <h1> 태그만 글자 가운데정렬 하기
+  참고: https://www.w3schools.com/cssref/sel_firstchild.asp */
+  h1:first-child {
+    text-align: center;
+  }
+  
+  /* 모든 <h1>태그 전에 Topic: 붙이기
+  참고: https://www.w3schools.com/cssref/sel_before.asp */
+  h1::before {
+    content: "Topic: ";
+  }
+  
+  p {
+    font-size: 16px;
+    font-family: Verdana;
+    font-style: italic;
+  }
+  
+  /* <p> 태그 첫번째 글씨만 200% 키우고 색깔 #2980b9 주기 p::first-letter */
+  p::first-letter {
+    font-size: 200%;
+    color: #2980b9;
+  }
+  
+  .topic {
+    color: #2980b9;
+  }

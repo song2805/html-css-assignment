@@ -1,0 +1,92 @@
+/* h1-h3 tags font */
+
+.title-font {
+  font-family: Verdana;
+  font-style: italic;
+}
+
+/* 첫번째 챌린지 */
+
+.box {
+    margin : 20px;
+    padding : 50px;
+    border : 50px solid red;
+    width : 200px;
+}
+  
+.green {
+    border-color : green;
+}
+  
+.blue  {
+    border-color : blue;
+}
+
+/* 보너스 1 */
+
+.change-color-1 {
+  border-color : #7469B6;
+}
+
+.change-color-2 {
+  border-color : #F9F07A;
+}
+
+.change-color-3 {
+  border-color : #FB88B4;
+}
+
+/* 보너스 2 */
+
+.bonus-box {
+  display : flex;
+  justify-content: space-around;
+}
+
+.dis-none {
+  display : none;
+}
+
+.vis-hidden {
+  visibility : hidden;
+}
+
+/* 두벌째 챌린지 */
+
+h1 {
+  color: #9b59b6;
+}
+
+/* 모든 <h1>태그 전에 Topic: 붙이기 
+참고: https://www.w3schools.com/cssref/sel_before.asp */
+h1::before {
+  content: "Topic: ";
+}
+
+h1:first-child {
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  font-family: Verdana;
+  font-style: italic;
+}
+
+/* <p> 태그 첫번째 글씨만 200% 키우고 색깔 #2980b9 주기 참고: https://www.w3schools.com/cssref/sel_firstletter.php*/
+p::first-letter {
+  font-size: 200%;
+  color: #2980b9;
+}
+
+
+/* 노트스타일의 뒷 배경 주기
+참고: http://projects.verou.me/css3patterns/ */
+.challenge2 {
+  background-color: #fff;
+  background-image:
+  linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+  linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+  padding-left: 10%;
+}
